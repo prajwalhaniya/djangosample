@@ -17,12 +17,13 @@ NOTES
 // start migrations for an app
 - python3 manage.py makemigrations posts
 
+- python3 manage.py runserver
+- python3 manage.py migrate
 
-- After running `python3 manage.py runserver` you may get several warnings related to migrations. so run `python3 manage.py migrate`. Once you run these command, the warnings must go away.
+// to freeze all the package requirements
+- pip freeze > requirements.txt
 
-- use `pip freeze > requirements.txt`
-
-To make use of Django-admin, we must first create a superuser
+// To make use of Django-admin, we must first create a superuser
 -  python3 manage.py createsuperuser
 
 
